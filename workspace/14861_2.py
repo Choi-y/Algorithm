@@ -1,4 +1,4 @@
-# 사분면 고르기 (https://www.acmicpc.net/problem/14681) 문제 풀이 - 1 (6/30)
+# 사분면 고르기 (https://www.acmicpc.net/problem/14681) 문제 풀이 - 2 (6/30)
 
 # 흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. "Quadrant n"은 "제n사분면"이라는 뜻이다.
 # https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/14681/1.png
@@ -8,16 +8,14 @@
 x = int(input())
 y = int(input())
 
-# 첫 번째 방법
-if x*y > 0:
-    if x>0:
-        sol = 1
-    else:
-        sol = 3
-else:
-    if x>0:
-        sol = 4
-    else:
-        sol = 2
+# 두 번째 방법
+if x > 0 and y > 0:
+    sol = 1
+elif x < 0 and y > 0:
+    sol = 2
+elif x < 0 and y < 0:
+    sol = 3
+elif x > 0 and y < 0:
+    sol = 4
 
 print(sol)
