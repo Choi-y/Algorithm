@@ -1,4 +1,6 @@
-# https://www.acmicpc.net/problem/1920 풀이
+# 수 찾기 (https://www.acmicpc.net/problem/1920) 풀이 (7/1)
+
+
 N = int(input())
 A = list(map(int, input().split()))
 A.sort()
