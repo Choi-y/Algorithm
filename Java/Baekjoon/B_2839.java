@@ -2,11 +2,13 @@
  * 설탕 N 킬로그램 배달 / 3kg, 5kg 봉지 있음
  *  최대한 적은 봉지로 배달
  **/
+package Baekjoon;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-public class Main {
+public class B_2839 {
     public static void main (String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
